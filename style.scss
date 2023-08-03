@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.d-flex {
+  display: flex;
+}
+button {
+  padding: 10px 20px;
+  margin: 30px 0;
+  cursor: pointer;
+  background-color: #39a1ea;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #0089ef;
+    //transform: scale(1.05);
+  }
+}
+h1 {
+  margin: 10px;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.board {
+  border: black solid 1px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  & > div {
+    border: black solid 1px;
+    cursor: pointer;
+  }
+}
+.circle {
+  background-image: url("images/circle.png");
+  background-size: contain;
+  background-position: center;
+}
+.cross {
+  background-image: url("images/cross.png");
+  background-size: contain;
+  background-position: center;
+}
+.top-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+  button {
+    font-size: 1rem;
+    margin: 0 20px;
+  }
+}
+.players-figure {
+  width: 50px;
+  height: 50px;
+  border: black solid 2px;
+}
