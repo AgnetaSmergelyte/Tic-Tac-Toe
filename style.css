@@ -10,11 +10,11 @@
 
 button {
   padding: 10px 20px;
-  margin: 30px 0;
+  margin: 50px 0;
   cursor: pointer;
   background-color: #39a1ea;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: all 0.3s ease;
 }
 button:hover {
@@ -22,23 +22,22 @@ button:hover {
 }
 
 h1 {
-  margin: 10px;
+  margin: 30px;
+  font-size: 2.5rem;
 }
 
 .container {
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .board {
   border: black solid 1px;
   display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
 }
 .board > div {
   border: black solid 1px;
@@ -61,16 +60,16 @@ h1 {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 50px;
+  margin: 30px 0 0;
 }
 .top-nav button {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin: 0 20px;
 }
 
 .players-figure {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border: black solid 2px;
 }
 
